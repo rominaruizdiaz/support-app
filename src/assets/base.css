@@ -1,0 +1,22 @@
+/* color palette */
+:root {
+  --primary-blue: #41caff;
+  --white: #ffffff;
+
+  --input-gray: #eeeeee;
+  --information-div: #f3f3f3;
+  --information-text: #646464;
+  --comment-div: #fcfcfc;
+
+  --alert-text-red: #ae3131;
+  --alert-red: #ff9393;
+
+  --pending: #ffc47e;
+  --resolve: #9ed672;
+  --delate: #f25c5c;
+  --edit: #accae5;
+
+  --text-primary-black: #000000;
+  --text-primary-gray: #646464;
+  --text-gray: #acacac;
+}
