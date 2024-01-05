@@ -1,9 +1,8 @@
+<script setup>
+import employeeHeader from "../components/HeaderUser.vue";
+</script>
 <template>
-  <div>hola</div>
+  <employeeHeader />
 </template>
 
-<style scoped>
-div {
-  background-color: var(--resolve);
-}
-</style>
+<style scoped></style>

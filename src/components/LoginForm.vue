@@ -1,12 +1,37 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import { useAuthStore } from "@/stores/auth";
+import { useRoute, useRouter } from "vue-router";
+
+const username = ref("");
+const password = ref("");
+
+const route = useRoute();
+const router = useRouter();
+
+const store = useAuthStore();
+
+function login() {
+  if (username.value === store.user.username) {
+    store.user.isAuthenticated = true;
+    const redirectPath = route.query.redirect || "/admin";
+    router.push(redirectPath);
+  }
+}
+</script>
 
 <template>
   <section>
     <a href="">Help</a>
-    <form>
+    <form @submit.prevent="login">
       <legend>Log in</legend>
-      <input type="text" id="username" placeholder="Username" />
-      <input type="password" placeholder="Password" />
+      <input
+        type="text"
+        id="username"
+        v-model="username"
+        placeholder="Username"
+      />
+      <input type="password" v-model="password" placeholder="Password" />
 
       <input id="login-input" type="submit" value="login" />
     </form>
