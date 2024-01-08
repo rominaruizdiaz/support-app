@@ -2,11 +2,11 @@
 :root {
   --primary-blue: #41caff;
   --white: #ffffff;
+  --soft-white: #f8f8f8;
 
   --input-gray: #eeeeee;
   --information-div: #f3f3f3;
   --information-text: #646464;
-  --comment-div: #fcfcfc;
 
   --alert-text-red: #ae3131;
   --alert-red: #ff9393;
@@ -18,5 +18,10 @@
 
   --text-primary-black: #000000;
   --text-primary-gray: #646464;
-  --text-gray: #acacac;
+  --text-gray: #b2b2b2;
 }
+
+/* font-family: 'Chivo', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: 'Anonymous Pro', monospace; */
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
